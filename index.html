@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1220"><title>CSS Loader Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header><h1>CSS Loader Animation</h1></header>
+
+    <section class="loader-section">
+      <div class="visual"><div class="lava" aria-label="Liquid lava loader"></div></div>
+      <div class="details">
+        <h2>🌋 Liquid Lava Loader</h2>
+        <pre><code>@keyframes blob {
+  50% {
+    border-radius: 30% 70% 60% 40% / 40% 30% 70% 60%;
+    transform: scale(1.1);
+  }
+}
+
+.lava {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #ff5f1f, #ffb703);
+  border-radius: 50%;
+  animation: blob 2s infinite;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="loader-section">
+      <div class="visual"><div class="cube" aria-label="Holographic cube loader"></div></div>
+      <div class="details">
+        <h2>🧊 Holographic Cube Loader</h2>
+        <pre><code>@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.cube {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #67e8f9;
+  transform-style: preserve-3d;
+  animation: spin 3s linear infinite;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="loader-section">
+      <div class="visual"><div class="orbit" aria-label="Quantum orbit loader"></div></div>
+      <div class="details">
+        <h2>⚛️ Quantum Orbit Loader</h2>
+        <pre><code>@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.orbit {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #475569;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 2s linear infinite;
+}
+
+.orbit::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #22d3ee;
+  border-radius: 50%;
+  top: -5px;
+  left: 30px;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="loader-section">
+      <div class="visual"><div class="circuit" aria-label="Cyber circuit loader"></div></div>
+      <div class="details">
+        <h2>⚡ Cyber Circuit Loader</h2>
+        <pre><code>@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.circuit {
+  width: 80px;
+  height: 80px;
+  background:
+    repeating-linear-gradient(
+      90deg, #22c55e 0 4px, transparent 4px 8px
+    ),
+    repeating-linear-gradient(
+      0deg, #22c55e 0 4px, transparent 4px 8px
+    );
+  mask: radial-gradient(circle, transparent 35%, #000 36%);
+  animation: spin 6s linear infinite;
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="loader-section">
+      <div class="visual"><div class="portal" aria-label="Infinity portal loader"></div></div>
+      <div class="details">
+        <h2>🌀 Infinity Portal Loader</h2>
+        <pre><code>@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.portal {
+  width: 70px;
+  height: 70px;
+  border: 5px solid transparent;
+  border-top-color: #8b5cf6;
+  border-right-color: #06b6d4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}</code></pre>
+      </div>
+    </section>
+    <footer>Pure HTML &amp; CSS · Five animated loaders</footer>
+  </main>
+</body>
+</html>
